@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+    text-decoration: none;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(5, 10, 24);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+}
+
+#nav-logo, #nav-social{
+    flex-basis: calc(100% / 3);
+}
+
+#nav-playlist, #nav-contact {
+    flex-grow: 1;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid rgb(255,255,255,0.1);
+}
+
+nav > .nav-section {
+    padding: 3rem 2rem;
+    display: flex;
+    gap: 1rem;
+    border-left: 1px solid rgb(255,255,255,0.1);
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-logo > a {
+    font-size: 1.5rem;
+}
+
+#nav-social {
+    gap: 3.4rem;
+}
+
+h1, h2, h3, a, p, span {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    color: white;
+}
+
+main {
+    flex-grow: 1;
+}
+
+main > article {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+
+main > article > .article-section {
+    height: 100%;
+}
+
+main > article > .main-description-section, 
+main > article > .main-nav-section {
+    border-left: 1px solid rgb(255,255,255,0.1);
+}
+
+main > article > .main-title-section,
+main > article > .main-nav-section {
+    border-top: 1px solid rgb(255,255,255,0.1);
+}
+
+main > article > .main-image-section {
+    background-image: url(/images/AFMN.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+main > article > .main-description-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 4rem; 
+  }
+  
+main > article > .main-description-section > p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.25em;
+}
+
+main > article > .main-title-section {
+    align-items: center; 
+    justify-content: space-between;
+    padding: 2rem 4rem;
+}
+  
+main > article > .main-title-section * {
+    color: white;
+}
+
+main > article > .main-title-section > h2 {
+    flex-basis: 50%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3.5rem;
+    line-height: 3rem;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+main > article > .main-nav-section > .nav-button-link > .main-nav-button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 3rem;
+    cursor: pointer;
+}
+  
+main > article > .main-nav-section > .nav-button-link > .main-nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.main-nav-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+}
+
+.nav-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.1); /* Vertical border between buttons */
+}
+
+.main-nav-button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 3rem;
+    cursor: pointer;
+}

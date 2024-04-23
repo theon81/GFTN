@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+    height: 100vh;  
+    display: flex;
+    justify-content: center;
+    align-items: center; transform: translate(0, -20%);
+    margin: 0;
+    overflow: hidden;
+  }
+  
+#logo {
+    position: relative;
+    width: 400px;
+    user-select: none;
+}
+  
+#logo > img {
+    width: 120%;
+    position: absolute;
+}
+  
