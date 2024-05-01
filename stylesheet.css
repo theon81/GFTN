@@ -132,14 +132,14 @@ main > article > .main-nav-section > .nav-button-link > .main-nav-button:hover {
 
 .main-nav-section {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+    grid-template-columns: 1fr 1fr;
 }
 
 .nav-button-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-right: 1px solid rgba(255, 255, 255, 0.1); /* Vertical border between buttons */
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .main-nav-button {
